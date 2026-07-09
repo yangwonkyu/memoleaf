@@ -63,6 +63,8 @@ flowchart TD
     N --> F
 ```
 
+More diagrams: [Content Flowcharts](content-flowcharts.md#hidden-catch)
+
 ## Development Notes
 
 ### Difficulty Control

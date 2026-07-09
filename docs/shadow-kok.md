@@ -59,6 +59,8 @@ flowchart TD
     O --> G
 ```
 
+More diagrams: [Content Flowcharts](content-flowcharts.md#shadow-kok)
+
 ## Development Notes
 
 ### Round Generation

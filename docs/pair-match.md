@@ -66,6 +66,8 @@ flowchart TD
     O --> F
 ```
 
+More diagrams: [Content Flowcharts](content-flowcharts.md#pair-match)
+
 ## Development Notes
 
 ### Layout And Difficulty

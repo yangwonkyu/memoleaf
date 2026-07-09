@@ -28,7 +28,11 @@ Unity/C# 기반 게임 클라이언트 개발 포트폴리오입니다.
    - 프리뷰, 카드 플립, 매칭 판정, 자동 힌트
    - 점수/콤보/결과 데이터 수집 흐름
 
-4. [Portfolio Evidence Policy](docs/evidence-policy.md)
+4. [Content Flowcharts](docs/content-flowcharts.md)
+   - 세 콘텐츠의 입력, 상태, 판정, 연출 흐름 요약
+   - 채용자가 빠르게 확인할 수 있는 구현 구조도
+
+5. [Portfolio Evidence Policy](docs/evidence-policy.md)
    - 공개 가능한 자료와 비공개 자료 구분
    - 회사 코드 대신 설명/GIF/재구성 샘플로 증명하는 방식
 
@@ -72,6 +76,14 @@ Details: [docs/shadow-kok.md](docs/shadow-kok.md)
 - Score, combo, and result collection
 
 Details: [docs/pair-match.md](docs/pair-match.md)
+
+## Content Flowcharts
+
+각 콘텐츠별 구현 흐름은 별도 문서에 모았습니다.
+
+- [Hidden Catch Flowchart](docs/content-flowcharts.md#hidden-catch)
+- [Shadow Kok Flowchart](docs/content-flowcharts.md#shadow-kok)
+- [Pair Match Flowchart](docs/content-flowcharts.md#pair-match)
 
 ## Public Code Policy
 
