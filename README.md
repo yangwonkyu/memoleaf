@@ -7,7 +7,7 @@ Unity/C# 기반 게임 클라이언트 개발 포트폴리오입니다.
 ## Profile
 
 - Position: Unity Client Developer
-- Strengths: UI flow, in-game presentation, drag-and-drop interaction, screen state control
+- Strengths: UI flow, in-game presentation, shader/particle feedback, drag-and-drop interaction, screen state control
 - Tech: Unity, C#, UGUI, TextMeshPro, DOTween, ParticleSystem, Shader Graph, ScriptableObject, FSM, Git
 - Focus: 기존 Unity 프로젝트 구조를 파악하고, UI/연출/콘텐츠 기능을 실제 동작으로 구현하는 클라이언트 개발
 
@@ -16,17 +16,17 @@ Unity/C# 기반 게임 클라이언트 개발 포트폴리오입니다.
 1. [Hidden Catch](docs/hidden-catch.md)
    - 난이도별 목표/스폰/유사 동물 파라미터 제어
    - 문제 제시 후 드래그 앤 드롭 정답 판정
-   - 정답 실루엣 해금 연출과 힌트 아웃라인 처리
+   - 직접 제작한 정답 파티클, 클릭 피드백, 힌트 아웃라인 처리
 
 2. [Shadow Kok](docs/shadow-kok.md)
    - 동물 실루엣과 색상 팔레트 기반 정답 매칭
    - 색상 드래그 앤 드롭 입력 처리
-   - 정답 색 확산 셰이더 연출과 자동 힌트
+   - 직접 제작한 색상 확산 셰이더, 정답 파티클, 자동 힌트
 
 3. [Pair Match](docs/pair-match.md)
    - 난이도별 카드 배치와 빈 슬롯 처리
    - 프리뷰, 카드 플립, 매칭 판정, 자동 힌트
-   - 점수/콤보/결과 데이터 수집 흐름
+   - 카드 플립/매치 파티클/콤보 피드백/결과 데이터 수집 흐름
 
 4. [Content Flowcharts](docs/content-flowcharts.md)
    - 세 콘텐츠의 입력, 상태, 판정, 연출 흐름 요약
@@ -46,7 +46,7 @@ Unity/C# 기반 게임 클라이언트 개발 포트폴리오입니다.
 
 - Difficulty-based round parameter control
 - Drag-and-drop answer validation
-- Correct answer reveal presentation with DOTween
+- Correct answer reveal presentation with DOTween and custom particle feedback
 - Idle hint outline using material thickness animation
 
 Details: [docs/hidden-catch.md](docs/hidden-catch.md)
@@ -59,7 +59,7 @@ Details: [docs/hidden-catch.md](docs/hidden-catch.md)
 
 - Color palette generation with answer/distractor colors
 - Drag clone handling for UI drop interaction
-- Shader-based color spread presentation
+- Custom shader-based color spread presentation
 - Idle hint outline for the correct color piece
 
 Details: [docs/shadow-kok.md](docs/shadow-kok.md)
@@ -72,7 +72,7 @@ Details: [docs/shadow-kok.md](docs/shadow-kok.md)
 
 - Stage-based card layout and grid sizing
 - Preview and card flip sequence
-- Match/wrong answer handling with input lock
+- Match/wrong answer handling with input lock and particle feedback
 - Score, combo, and result collection
 
 Details: [docs/pair-match.md](docs/pair-match.md)
@@ -84,6 +84,15 @@ Details: [docs/pair-match.md](docs/pair-match.md)
 - [Hidden Catch Flowchart](docs/content-flowcharts.md#hidden-catch)
 - [Shadow Kok Flowchart](docs/content-flowcharts.md#shadow-kok)
 - [Pair Match Flowchart](docs/content-flowcharts.md#pair-match)
+
+## Presentation Work
+
+이 포트폴리오의 연출 요소는 단순히 배치된 에셋을 연결한 것이 아니라, Unity 클라이언트 기능 흐름에 맞춰 직접 제작하거나 구현한 피드백입니다.
+
+- Shadow Kok: 정답 색이 검은 실루엣에서 퍼져나가는 `ShadowSpread` 셰이더 제작 및 적용
+- Shadow Kok: 정답 색상 조각 힌트를 위한 아웃라인 머티리얼 두께 애니메이션 구현
+- Hidden Catch: 정답 처리 시 실루엣 해금, 스케일 반응, 파티클 피드백 구현
+- Pair Match: 카드 플립, 매치 성공 파티클, 카드 스케일 반응, 콤보 점수 팝업 구현
 
 ## Public Code Policy
 
