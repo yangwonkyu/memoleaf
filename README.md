@@ -175,6 +175,19 @@ MemoLeaf는 터치·드래그 중심의 인지훈련 게임 프로젝트입니�
 | [공개용 재작성 코드 예제](docs/core-implementation.md) | 선긋기 입력 상태, 원격 이미지 로딩과 로컬 폴백, ScriptableObject·Editor 제작 도구 |
 | [이전 콘텐츠 흐름도](docs/content-flowcharts.md) | 당시 구현한 진행·판정 흐름 |
 
+## 실행 가능한 독립 예제 · Fold Grid
+
+짐싸기 개발 경험에서 다룬 **접힘 좌표 변환과 여러 칸 물건의 겹침 판정**을 별도 Unity 프로젝트로 재구성했습니다.
+
+- **실행:** Unity 6000.3.10f1에서 `samples/fold-grid` 폴더를 프로젝트로 열고 `Assets/FoldGridDemo.unity` 실행
+- **기능:** 1×1·2×1·1×2 물건의 클릭 배치, 접힌 좌표 표시, 충돌 검사, Undo·Reset
+- **구조:** Unity에 의존하지 않는 판정 코드와 입력·표시 코드 분리
+- **검증:** Unity 배치 실행에서 컴파일 및 좌표·경계·충돌 검증 4,767개 조건 통과. UI 수동 검증은 미실시
+
+이 샘플은 실무 경험을 바탕으로 **Codex와 함께 새로 작성한 설명·학습용 코드**입니다. 회사 원본 코드·리소스를 포함하지 않으며, 당시 제품 코드를 그대로 공개한 자료가 아닙니다.
+
+[실행 방법과 설계 설명](samples/fold-grid/README.md) · [판정 코드](samples/fold-grid/Assets/FoldGrid/FoldRules.cs) · [검증 코드](samples/fold-grid/Assets/Editor/ValidateFoldGrid.cs)
+
 ## 사용 기술과 자료 범위
 
 - **클라이언트:** Unity, C#, UGUI, TextMeshPro
