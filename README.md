@@ -77,6 +77,8 @@ MemoLeaf는 터치·드래그 중심의 인지훈련 게임 프로젝트입니�
 
 [공통 컴포넌트의 책임·예외 처리·상태 관리](docs/shared-experience.md)
 
+[독립 C# 코드 예제: 시작 난이도·결과 JSON 검증](samples/session-results/README.md)
+
 ## UI 셰이더와 파티클
 
 타이틀, 정답, 힌트와 남은 시간을 시각적으로 전달하는 효과를 제작하고 게임 진행에 연결했습니다.
